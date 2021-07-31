@@ -1,2 +1,4 @@
-# Hackathon_submission
-Our Hackathon submission
+**Requirements**
+psutil
+tkinter
+plyer
