@@ -1,13 +1,13 @@
-#Requirements#
+# Requirements
 
-##Specs##
+## Specs
 Windows 10,
  python 3,
  Google Chrome,
  Notifications enabled,
  python IDE,
 
-##Installation Process##
+## Installation Process
 1) Download the repository as a zip file.
 2) Unzip the file an 2 folders should be present (application and website)
 3) the website folder contains the source code for our website.
@@ -15,7 +15,7 @@ Windows 10,
 5) the first file, main.py, contains the source code, it can be opened and the program can be run from there.
 6) alternatively, for convenience, you can run the main.pyw file and the code automatically runs as it is an executable. (for multiple use of program)
 
-##Libraries##
+## Libraries
 
 psutil - (pip install psutil)
 
@@ -36,8 +36,3 @@ win32gui - (pip install win32gui)
 win32con - (pip install win32con)
 
 webbrowser - (pip install webbrowser)
-
-
-
-
-
