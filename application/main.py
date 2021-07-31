@@ -161,3 +161,51 @@ The Syntax Error Found 404 Team"""
 
             root.after(100, when_loop)
 
+# Layout - Tkinter
+root = Tk()
+on = tk.IntVar()
+
+root.geometry('573x457')
+root.configure(background='#CFCFCF')
+root.title('Fitness Check')
+
+CheckBoxOne=Checkbutton(root, text='Enable', bg='#CFCFCF', font=('courier', 18, 'normal'), command=hello)
+CheckBoxOne.place(x=215, y=41)
+
+Label(root, text='Progress Bar:', bg='#CFCFCF', font=('courier', 18, 'normal')).place(x=191, y=115)
+
+progessBarOne_style = ttk.Style()
+progessBarOne_style.theme_use('clam')
+progessBarOne_style.configure('progessBarOne.Horizontal.TProgressbar', foreground='#EE0000', background='#EE0000')
+
+progessBarOne=ttk.Progressbar(root, style='progessBarOne.Horizontal.TProgressbar', orient='horizontal', length=409, mode='determinate', maximum=5, value=0)
+progessBarOne.place(x=86, y=177)
+
+email_input=Entry(root, textvariable=email_user, font=('courier', 13, 'normal'))
+email_input.place(x=190, y=322, height=25, width=300)
+
+Label(root, text='Add Email: ', bg='#CFCFCF', font=('courier', 15, 'normal')).place(x=60, y=321)
+
+Button(root, text='Submit', bg='#FFFFFF', font=('courier', 15, 'normal'), command=submit_email).place(x=200, y=375)
+
+label_good = Label(root, text="Successfully Saved Email!", bg="#CFCFCF", fg="#025B00", font=('courier', 10, 'normal'))
+label_good.place(x=300, y=380)
+
+hide_widget(label_good)
+
+label_bad = Label(root, text="Invalid Email Address!", bg="#CFCFCF", fg="#FF0000", font=('courier', 10, 'normal'))
+label_bad.place(x=300, y=380)
+
+hide_widget(label_bad)
+
+label_not_registered = Label(root, text="Please Register your email on our website!", bg="#CFCFCF", fg="#FF0000", font=('courier', 10, 'normal'))
+label_not_registered.place(x=300, y=380)
+
+hide_widget(label_not_registered)
+
+label_register_texts = Label(root, text='To register your email click', bg='#CFCFCF', font=('courier', 10, 'normal')).place(x=281, y=430)
+
+
+link_button = Button(text="here", command=callback, fg="blue", width=5).place(x=515, y=428)
+
+root.mainloop()
