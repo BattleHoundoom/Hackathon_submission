@@ -1,11 +1,11 @@
 #Requirements#
 
 ##Specs##
-Windows 10
-python 3
-Google Chrome
-Notifications enabled
-python IDE
+Windows 10,
+ python 3,
+ Google Chrome,
+ Notifications enabled,
+ python IDE,
 
 ##Installation Process##
 1) Download the repository as a zip file.
