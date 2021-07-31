@@ -10,7 +10,10 @@ import win32gui
 import win32con
 
 from dotenv import dotenv_values
-
 config = dotenv_values(".env")
 
-print(config.get('PASSWORD'))
+#Email variables
+port = 465
+server = "smtp.gmail.com"
+sender = "syntaxerrorfound404@gmail.com"
+password = config.get('PASSWORD')
