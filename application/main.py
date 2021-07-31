@@ -23,3 +23,11 @@ times = 0
 notif_counter = 0
 second = 0
 email_user = ""
+
+# Database Connection
+db = ms.connect(
+    host = "sql6.freemysqlhosting.net",
+    user = "sql6428478",
+    passwd = "Tk3jBdaXtt",
+    database = "sql6428478"
+)
