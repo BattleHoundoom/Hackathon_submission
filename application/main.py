@@ -12,3 +12,14 @@ import mysql.connector as ms
 import smtplib, ssl
 import win32gui
 import win32con
+
+# Variables and Configuration
+port = 465
+smtp_server = "smtp.gmail.com"
+sender_email = "syntaxerrorfound404@gmail.com"
+password = "Syntax@404"
+on = False
+times = 0
+notif_counter = 0
+second = 0
+email_user = ""
